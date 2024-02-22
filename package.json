@@ -1,0 +1,32 @@
+{
+  "name": "browserstack-examples-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browserstack-local": "^1.4.8",
+    "playwright": "^1.40.1",
+    "util": "^0.12.4",
+    "@percy/cli": "1.28.0",
+    "@percy/playwright": "^1.0.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "browserstack-node-sdk": "^1.31.22"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm update browserstack-node-sdk",
+    "bstack-single": "npx browserstack-node-sdk playwright test newtab.spec.js --config=resources/conf/playwright-bstack-local.config.js --browserstack.config=./resources/browserstack-conf/browserstack-single.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princebaretto99/browserstack-examples-playwright.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princebaretto99/browserstack-examples-playwright/issues"
+  },
+  "homepage": "https://github.com/princebaretto99/browserstack-examples-playwright#readme"
+}
